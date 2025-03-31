@@ -10,6 +10,8 @@ from app.utils.file_handler import save_upload_file_temporarily
 from app.utils.functions import *
 
 app = FastAPI(title="IITM Assignment API")
+def handler(event, context):
+    return app
 
 # Add CORS middleware
 app.add_middleware(
